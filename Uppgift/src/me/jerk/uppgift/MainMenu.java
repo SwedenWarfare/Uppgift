@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import me.jerk.bil.BilGui;
 import me.jerk.utils.GlobalVars;
 
 public class MainMenu implements ActionListener {
@@ -42,7 +43,8 @@ public class MainMenu implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent event) {
 		if(event.getSource() == bilButton) {
-			System.out.println("Bil");
+			frame.remove(mainPanel);
+			new BilGui();
 		}else if(event.getSource() == elevButton) {
 			System.out.println("Elev");
 		}else if(event.getSource() == smartButton) {
