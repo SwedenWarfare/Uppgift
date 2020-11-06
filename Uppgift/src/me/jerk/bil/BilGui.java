@@ -1,5 +1,5 @@
 package me.jerk.bil;
 
-public class BilInfo {
-	
+public class BilGui {
+
 }
