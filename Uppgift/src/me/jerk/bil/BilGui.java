@@ -18,7 +18,7 @@ public class BilGui {
 	JButton backButton = new JButton("Main Menu");
 	JButton prevButton = new JButton("Prev index");
 	JButton nextButton = new JButton("Next index");
-	
+	JButton saveButton = new JButton("Submit");
 	JTextArea inputArea;
 	JTextArea outPutArea;
 	JScrollPane outscrollPane;
@@ -47,6 +47,9 @@ public class BilGui {
 		gbc.gridy = 0;
 		bilPanel.add(backButton,gbc);
 		gbc.gridx = 3;
+		gbc.gridy = 0;
+		bilPanel.add(saveButton,gbc);
+		gbc.gridx = 4;
 		gbc.gridy = 0;
 		bilPanel.add(nextButton,gbc);
 		
@@ -79,7 +82,7 @@ public class BilGui {
 		frameGbc.gridx = 0;
 		frameGbc.gridy = 4;
 		frame.add(outscrollPane,frameGbc);
-		frame.setSize(300, 250);
+		frame.setSize(350, 250);
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
